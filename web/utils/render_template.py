@@ -203,7 +203,6 @@ watch_tmplt = """
                     'current-time',
                     'duration',
                     'mute',
-                    'volume',
                     'captions',
                     'settings',
                     'pip',
