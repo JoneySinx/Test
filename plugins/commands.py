@@ -420,7 +420,6 @@ async def myplan(client, message):
     mp = db.get_plan(message.from_user.id)
     if not await is_premium(message.from_user.id, client):
         btn = [[
-            InlineKeyboardButton('Activate Trial', callback_data='activate_trial'),
             InlineKeyboardButton('Activate Plan', callback_data='activate_plan')
         ]]
         return await message.reply('You dont have any premium plan, please use /plan to activate plan', reply_markup=InlineKeyboardMarkup(btn))
